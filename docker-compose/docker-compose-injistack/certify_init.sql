@@ -539,15 +539,13 @@ VALUES
      "credentialSubject": {
          "id": "${_holderId}",
          "sub_id": "${sub_id}",
-         "application_number": "${application_number}",
-         "service_type": "${service_type}",
-         "nic_number": "${nic_number}",
+         "application_id": "${application_id}",
          "full_name": "${full_name}",
-         "birth_date": "${birth_date}",
-         "gender": "${gender}",
-         "mobile_number": "${mobile_number}",
-         "email_address": "${email_address}",
-         "district": "${district}",
+         "email": "${email}",
+         "phone": "${phone}",
+         "date_of_birth": "${date_of_birth}",
+         "issued_date": "${issued_date}",
+         "is_fit_to_drive": "${is_fit_to_drive}",
          "status": "${status}"
      }
 }
