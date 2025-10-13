@@ -106,135 +106,135 @@ CREATE TABLE certify.credential_template(
         CONSTRAINT pk_template PRIMARY KEY (context, credential_type)
 );
 
-INSERT INTO certify.credential_template (context, credential_type, template, cr_dtimes, upd_dtimes) VALUES ('https://www.w3.org/2018/credentials/v1', 'FarmerCredential,VerifiableCredential', '{
-     "@context": [
-         "https://www.w3.org/2018/credentials/v1",
-         "https://mosip.github.io/inji-config/contexts/farmer.json",
-         "https://w3id.org/security/suites/ed25519-2020/v1"
-     ],
-     "issuer": "${_issuer}",
-     "type": [
-         "VerifiableCredential",
-         "FarmerCredential"
-     ],
-     "issuanceDate": "${validFrom}",
-     "expirationDate": "${validUntil}",
-     "credentialSubject": {
-         "id": "${_holderId}",
-         "fullName": "${fullName}",
-         "mobileNumber": "${mobileNumber}",
-         "dateOfBirth": "${dateOfBirth}",
-         "gender": "${gender}",
-         "state": "${state}",
-         "district": "${district}",
-         "villageOrTown": "${villageOrTown}",
-         "postalCode": "${postalCode}",
-         "landArea": "${landArea}",
-         "landOwnershipType": "${landOwnershipType}",
-         "primaryCropType": "${primaryCropType}",
-         "secondaryCropType": "${secondaryCropType}",
-         "face": "${face}",
-         "farmerID": "${farmerID}"
-     }
-}
-', '2024-10-24 12:32:38.065994', NULL);
+-- INSERT INTO certify.credential_template (context, credential_type, template, cr_dtimes, upd_dtimes) VALUES ('https://www.w3.org/2018/credentials/v1', 'FarmerCredential,VerifiableCredential', '{
+--      "@context": [
+--          "https://www.w3.org/2018/credentials/v1",
+--          "https://mosip.github.io/inji-config/contexts/farmer.json",
+--          "https://w3id.org/security/suites/ed25519-2020/v1"
+--      ],
+--      "issuer": "${_issuer}",
+--      "type": [
+--          "VerifiableCredential",
+--          "FarmerCredential"
+--      ],
+--      "issuanceDate": "${validFrom}",
+--      "expirationDate": "${validUntil}",
+--      "credentialSubject": {
+--          "id": "${_holderId}",
+--          "fullName": "${fullName}",
+--          "mobileNumber": "${mobileNumber}",
+--          "dateOfBirth": "${dateOfBirth}",
+--          "gender": "${gender}",
+--          "state": "${state}",
+--          "district": "${district}",
+--          "villageOrTown": "${villageOrTown}",
+--          "postalCode": "${postalCode}",
+--          "landArea": "${landArea}",
+--          "landOwnershipType": "${landOwnershipType}",
+--          "primaryCropType": "${primaryCropType}",
+--          "secondaryCropType": "${secondaryCropType}",
+--          "face": "${face}",
+--          "farmerID": "${farmerID}"
+--      }
+-- }
+-- ', '2024-10-24 12:32:38.065994', NULL);
 
-INSERT INTO certify.credential_template (context, credential_type, template, cr_dtimes, upd_dtimes) VALUES ('https://www.w3.org/ns/credentials/v2', 'FarmerCredential,VerifiableCredential', '{
-    "@context": [
-        "https://www.w3.org/ns/credentials/v2",
-        "https://mosip.github.io/inji-config/contexts/farmer.json",
-        "https://w3id.org/security/suites/ed25519-2020/v1"
-    ],
-    "issuer": "${_issuer}",
-    "type": [
-        "VerifiableCredential",
-        "FarmerCredential"
-    ],
-    "validFrom": "${validFrom}",
-    "validUntil": "${validUntil}",
-    "credentialSubject": {
-        "id": "${_holderId}",
-        "fullName": "${fullName}",
-        "mobileNumber": "${mobileNumber}",
-        "dateOfBirth": "${dateOfBirth}",
-        "gender": "${gender}",
-        "state": "${state}",
-        "district": "${district}",
-        "villageOrTown": "${villageOrTown}",
-        "postalCode": "${postalCode}",
-        "landArea": "${landArea}",
-        "landOwnershipType": "${landOwnershipType}",
-        "primaryCropType": "${primaryCropType}",
-        "secondaryCropType": "${secondaryCropType}",
-        "face": "${face}",
-        "farmerID": "${farmerID}"
-    }
-}', '2024-10-24 12:32:38.065994', NULL);
+-- INSERT INTO certify.credential_template (context, credential_type, template, cr_dtimes, upd_dtimes) VALUES ('https://www.w3.org/ns/credentials/v2', 'FarmerCredential,VerifiableCredential', '{
+--     "@context": [
+--         "https://www.w3.org/ns/credentials/v2",
+--         "https://mosip.github.io/inji-config/contexts/farmer.json",
+--         "https://w3id.org/security/suites/ed25519-2020/v1"
+--     ],
+--     "issuer": "${_issuer}",
+--     "type": [
+--         "VerifiableCredential",
+--         "FarmerCredential"
+--     ],
+--     "validFrom": "${validFrom}",
+--     "validUntil": "${validUntil}",
+--     "credentialSubject": {
+--         "id": "${_holderId}",
+--         "fullName": "${fullName}",
+--         "mobileNumber": "${mobileNumber}",
+--         "dateOfBirth": "${dateOfBirth}",
+--         "gender": "${gender}",
+--         "state": "${state}",
+--         "district": "${district}",
+--         "villageOrTown": "${villageOrTown}",
+--         "postalCode": "${postalCode}",
+--         "landArea": "${landArea}",
+--         "landOwnershipType": "${landOwnershipType}",
+--         "primaryCropType": "${primaryCropType}",
+--         "secondaryCropType": "${secondaryCropType}",
+--         "face": "${face}",
+--         "farmerID": "${farmerID}"
+--     }
+-- }', '2024-10-24 12:32:38.065994', NULL);
 
-INSERT INTO certify.credential_template (context, credential_type, template, cr_dtimes, upd_dtimes) VALUES ('https://www.w3.org/2018/credentials/v1,https://mosip.github.io/inji-config/contexts/farmer.json', 'FarmerCredential,VerifiableCredential', '{
-     "@context": [
-         "https://www.w3.org/2018/credentials/v1",
-         "https://mosip.github.io/inji-config/contexts/farmer.json",
-         "https://w3id.org/security/suites/ed25519-2020/v1"
-     ],
-     "issuer": "${_issuer}",
-     "type": [
-         "VerifiableCredential",
-         "FarmerCredential"
-     ],
-     "issuanceDate": "${validFrom}",
-     "expirationDate": "${validUntil}",
-     "credentialSubject": {
-         "id": "${_holderId}",
-         "fullName": "${fullName}",
-         "mobileNumber": "${mobileNumber}",
-         "dateOfBirth": "${dateOfBirth}",
-         "gender": "${gender}",
-         "state": "${state}",
-         "district": "${district}",
-         "villageOrTown": "${villageOrTown}",
-         "postalCode": "${postalCode}",
-         "landArea": "${landArea}",
-         "landOwnershipType": "${landOwnershipType}",
-         "primaryCropType": "${primaryCropType}",
-         "secondaryCropType": "${secondaryCropType}",
-         "face": "${face}",
-         "farmerID": "${farmerID}"
-     }
-}
-', '2024-10-24 12:32:38.065994', NULL);
+-- INSERT INTO certify.credential_template (context, credential_type, template, cr_dtimes, upd_dtimes) VALUES ('https://www.w3.org/2018/credentials/v1,https://mosip.github.io/inji-config/contexts/farmer.json', 'FarmerCredential,VerifiableCredential', '{
+--      "@context": [
+--          "https://www.w3.org/2018/credentials/v1",
+--          "https://mosip.github.io/inji-config/contexts/farmer.json",
+--          "https://w3id.org/security/suites/ed25519-2020/v1"
+--      ],
+--      "issuer": "${_issuer}",
+--      "type": [
+--          "VerifiableCredential",
+--          "FarmerCredential"
+--      ],
+--      "issuanceDate": "${validFrom}",
+--      "expirationDate": "${validUntil}",
+--      "credentialSubject": {
+--          "id": "${_holderId}",
+--          "fullName": "${fullName}",
+--          "mobileNumber": "${mobileNumber}",
+--          "dateOfBirth": "${dateOfBirth}",
+--          "gender": "${gender}",
+--          "state": "${state}",
+--          "district": "${district}",
+--          "villageOrTown": "${villageOrTown}",
+--          "postalCode": "${postalCode}",
+--          "landArea": "${landArea}",
+--          "landOwnershipType": "${landOwnershipType}",
+--          "primaryCropType": "${primaryCropType}",
+--          "secondaryCropType": "${secondaryCropType}",
+--          "face": "${face}",
+--          "farmerID": "${farmerID}"
+--      }
+-- }
+-- ', '2024-10-24 12:32:38.065994', NULL);
 
-INSERT INTO certify.credential_template (context, credential_type, template, cr_dtimes, upd_dtimes) VALUES ('https://www.w3.org/ns/credentials/v2,https://mosip.github.io/inji-config/contexts/farmer.json', 'FarmerCredential,VerifiableCredential', '{
-    "@context": [
-        "https://www.w3.org/ns/credentials/v2",
-        "https://mosip.github.io/inji-config/contexts/farmer.json",
-        "https://w3id.org/security/suites/ed25519-2020/v1"
-    ],
-    "issuer": "${_issuer}",
-    "type": [
-        "VerifiableCredential",
-        "FarmerCredential"
-    ],
-    "validFrom": "${validFrom}",
-    "validUntil": "${validUntil}",
-    "credentialSubject": {
-        "id": "${_holderId}",
-        "fullName": "${fullName}",
-        "mobileNumber": "${mobileNumber}",
-        "dateOfBirth": "${dateOfBirth}",
-        "gender": "${gender}",
-        "state": "${state}",
-        "district": "${district}",
-        "villageOrTown": "${villageOrTown}",
-        "postalCode": "${postalCode}",
-        "landArea": "${landArea}",
-        "landOwnershipType": "${landOwnershipType}",
-        "primaryCropType": "${primaryCropType}",
-        "secondaryCropType": "${secondaryCropType}",
-        "face": "${face}",
-        "farmerID": "${farmerID}"
-    }
-}', '2024-10-24 12:32:38.065994', NULL);
+-- INSERT INTO certify.credential_template (context, credential_type, template, cr_dtimes, upd_dtimes) VALUES ('https://www.w3.org/ns/credentials/v2,https://mosip.github.io/inji-config/contexts/farmer.json', 'FarmerCredential,VerifiableCredential', '{
+--     "@context": [
+--         "https://www.w3.org/ns/credentials/v2",
+--         "https://mosip.github.io/inji-config/contexts/farmer.json",
+--         "https://w3id.org/security/suites/ed25519-2020/v1"
+--     ],
+--     "issuer": "${_issuer}",
+--     "type": [
+--         "VerifiableCredential",
+--         "FarmerCredential"
+--     ],
+--     "validFrom": "${validFrom}",
+--     "validUntil": "${validUntil}",
+--     "credentialSubject": {
+--         "id": "${_holderId}",
+--         "fullName": "${fullName}",
+--         "mobileNumber": "${mobileNumber}",
+--         "dateOfBirth": "${dateOfBirth}",
+--         "gender": "${gender}",
+--         "state": "${state}",
+--         "district": "${district}",
+--         "villageOrTown": "${villageOrTown}",
+--         "postalCode": "${postalCode}",
+--         "landArea": "${landArea}",
+--         "landOwnershipType": "${landOwnershipType}",
+--         "primaryCropType": "${primaryCropType}",
+--         "secondaryCropType": "${secondaryCropType}",
+--         "face": "${face}",
+--         "farmerID": "${farmerID}"
+--     }
+-- }', '2024-10-24 12:32:38.065994', NULL);
 
 
 CREATE TABLE IF NOT EXISTS certify.applications (
@@ -520,13 +520,50 @@ CREATE INDEX IF NOT EXISTS idx_applications_practical_test ON certify.applicatio
 
 
 -- Add passport credential template to existing credential_template table
+-- INSERT INTO certify.credential_template
+--     (context, credential_type, template, cr_dtimes, upd_dtimes)
+-- VALUES
+--     ('https://www.w3.org/2018/credentials/v1', 'DrivingLicenseCredential,VerifiableCredential', '{
+--      "@context": [
+--          "https://www.w3.org/2018/credentials/v1",
+--          "https://marshmelloweranda.github.io/inji-passport/passport-context.json",
+--          "https://w3id.org/security/suites/ed25519-2020/v1"
+--      ],
+--      "issuer": "${_issuer}",
+--      "type": [
+--          "VerifiableCredential",
+--          "DrivingLicenseCredential"
+--      ],
+--      "issuanceDate": "${validFrom}",
+--      "expirationDate": "${validUntil}",
+--      "credentialSubject": {
+--          "id": "${_holderId}",
+--          "sub_id": "${sub_id}",
+--          "application_number": "${application_number}",
+--          "service_type": "${service_type}",
+--          "nic_number": "${nic_number}",
+--          "full_name": "${full_name}",
+--          "birth_date": "${birth_date}",
+--          "gender": "${gender}",
+--          "mobile_number": "${mobile_number}",
+--          "email_address": "${email_address}",
+--          "district": "${district}",
+--          "status": "${status}"
+--      }
+-- }
+-- ', now(), NULL);
+
+
+--add driving licence credentials to  to template
+
+
 INSERT INTO certify.credential_template
     (context, credential_type, template, cr_dtimes, upd_dtimes)
 VALUES
     ('https://www.w3.org/2018/credentials/v1', 'DrivingLicenseCredential,VerifiableCredential', '{
      "@context": [
          "https://www.w3.org/2018/credentials/v1",
-         "https://marshmelloweranda.github.io/inji-passport/passport-context.json",
+         "https://marshmelloweranda.github.io/inji-config/contexts/driving-license-context.json",
          "https://w3id.org/security/suites/ed25519-2020/v1"
      ],
      "issuer": "${_issuer}",
@@ -538,21 +575,17 @@ VALUES
      "expirationDate": "${validUntil}",
      "credentialSubject": {
          "id": "${_holderId}",
-         "sub_id": "${sub_id}",
-         "application_number": "${application_number}",
-         "service_type": "${service_type}",
-         "nic_number": "${nic_number}",
+         "application_id": "${application_id}",
          "full_name": "${full_name}",
-         "birth_date": "${birth_date}",
-         "gender": "${gender}",
-         "mobile_number": "${mobile_number}",
-         "email_address": "${email_address}",
-         "district": "${district}",
+         "email": "${email}",
+         "phone": "${phone}",
+         "date_of_birth": "${date_of_birth}",
+         "issued_date": "${issued_date}",
+         "is_fit_to_drive": "${is_fit_to_drive}",
          "status": "${status}"
      }
 }
 ', now(), NULL);
-
 
 
 
