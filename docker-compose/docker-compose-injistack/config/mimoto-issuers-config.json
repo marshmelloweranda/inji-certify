@@ -6,13 +6,13 @@
       "protocol": "OpenId4VCI",
       "display": [
         {
-          "name": "Agriculture Department",
+          "name": "Department of Motor Traffic",
           "logo": {
-            "url": "https://mosip.github.io/inji-config/logos/agro-vertias-logo.png",
-            "alt_text": "agri-logo"
+            "url": "https://marshmelloweranda.github.io/logo/DMT.jpg",
+            "alt_text": "DMT-logo"
           },
-          "title": "Agriculture Department",
-          "description": "Download Farmers Credentials",
+          "title": "Department of Motor Traffic",
+          "description": "Download Driving Licence Credentials",
           "language": "en"
         }
       ],
